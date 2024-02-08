@@ -1,5 +1,3 @@
-import React from "react";
-
 const TodoList = () => {
     const tasks = [
         { id: 1, title: 'Tarea 1' },
@@ -10,18 +8,18 @@ const TodoList = () => {
 
     return (
         <div>
-            <table className="w-full mt-4">
+            <table className="w-full mt-4 ">
                 <thead>
                     <tr>
-                        <th className="py-2 w-3/4">Tarea</th>
-                        <th className="py-2">Acciones</th>
+                        <th className="py-2 w-3/4 bg-gray-200">Tarea</th>
+                        <th className="py-2 bg-gray-200">Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
                     {tasks.map(task => (
                         <tr key={task.id}>
                             <td className="border-b border-gray-200 py-2 pl-2">{task.title}</td>
-                            <td className="border-b border-gray-200 py-2">
+                            <td className="border-b border-gray-200 py-2  text-center">
                                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-1 px-2 rounded-full mr-2">
                                     Editar
                                 </button>
